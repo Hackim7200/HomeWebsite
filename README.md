@@ -1,2 +1,2 @@
 # HomeWebsite
-A website for home automation
+A website for home automation and some other stuff
