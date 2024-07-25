@@ -22,7 +22,7 @@ def index(request):
     
     #before you can do this you need to configure templates 
     #directory to a specific folder containing the index.html
-    return HttpResponse("<h1>Hello</h1>")
+    return render(request,"dist/index.html")
     
     
 
