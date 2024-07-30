@@ -1,0 +1,9 @@
+.food-card-wrapper {
+  margin: 10px;
+  // border: solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(11rem,1fr));
+  gap: 10px;
+  
+  
+}
