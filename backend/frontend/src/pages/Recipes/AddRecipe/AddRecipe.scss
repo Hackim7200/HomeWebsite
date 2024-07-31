@@ -1,0 +1,163 @@
+.wrapper {
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+  .add-recipe-form {
+    border: solid;
+  }
+
+  .upload-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    position: relative;
+    text-align: center;
+
+
+
+
+
+    .uploaded-view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        width: 250px;
+        margin-bottom: 1rem;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+       
+        
+      }
+    }
+    .uploadIcon {
+      margin: auto;
+      padding-left: 8rem;
+    }
+  }
+
+  h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 28px;
+      border-radius: 12px;
+      background: #4070f4;
+    }
+  }
+
+  form {
+    margin-top: 30px;
+
+    .text-area{
+        textArea{
+
+            width: 100%;
+        }
+    }
+
+    .input-box {
+      height: 52px;
+      margin: 18px 0;
+
+      textArea{
+
+
+
+        padding-left: 15px;
+        width: 89%;
+        height: 3.8rem;
+
+    }
+
+
+      input {
+        height: 100%;
+        width: 89%;
+        outline: none;
+        // padding: 0 15px;
+        padding-left: 15px;
+
+
+        font-size: 17px;
+        font-weight: 400;
+        color: #333;
+        border: 1.5px solid #c7bebe;
+        border-bottom-width: 2.5px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+
+        &:focus,
+        &:valid {
+          border-color: #4070f4;
+        }
+      }
+    }
+
+    .policy {
+      display: flex;
+      align-items: center;
+    }
+
+    h3 {
+      color: #707070;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+
+    .text {
+      h3 {
+        color: #333;
+        width: 100%;
+        text-align: center;
+
+        a {
+          color: #4070f4;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .input-box.button {
+      input {
+        color: #fff;
+        letter-spacing: 1px;
+        border: none;
+        background: #4070f4;
+        cursor: pointer;
+
+        &:hover {
+          background: #0e4bf1;
+        }
+      }
+    }
+  }
+}

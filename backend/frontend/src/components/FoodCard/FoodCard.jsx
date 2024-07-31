@@ -1,12 +1,11 @@
 import React from "react";
 import "./FoodCard.scss";
-import food from "../../assets/food.jpg";
-function FoodCard() {
+function FoodCard(props) {
   return (
     <article className="food-card">
-      <img src={food} />
+      <img src={props.img} />
       <div className="food-card-overlay">
-        <span className="food-card-text"> Lasagna</span>
+        <span className="food-card-text"> {props.text}</span>
       </div>
     </article>
   );

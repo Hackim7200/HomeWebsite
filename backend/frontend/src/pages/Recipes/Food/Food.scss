@@ -4,6 +4,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(11rem,1fr));
   gap: 10px;
+
+  .add-icon{
+    text-align: center;
+    align-content: center;
+
+  }
   
   
 }
